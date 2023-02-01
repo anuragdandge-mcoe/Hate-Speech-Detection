@@ -161,26 +161,7 @@ tweet_df['label'].value_counts()
 #  In the above code we are also printing the count of labeles which are in the form of 1 & 0 ,
 # 0's represents  for Normal speech or tweets and 1's represents for the Hateful Tweets 
 
-```
 
-
-    ---------------------------------------------------------------------------
-
-    NameError                                 Traceback (most recent call last)
-
-    ~\AppData\Local\Temp\ipykernel_4532\3860984972.py in <module>
-         19 
-         20 
-    ---> 21 tweet_df.tweet = tweet_df['tweet'].apply(data_processing)
-         22 tweet_df = tweet_df.drop_duplicates('tweet')
-         23 
-    
-
-    NameError: name 'tweet_df' is not defined
-
-
-
-```python
 
 fig = plt.figure(figsize=(5,5)) 
 sns.countplot(x='label', data = tweet_df)
